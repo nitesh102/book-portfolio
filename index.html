@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d13">
+  <meta name="description" content="Nitesh — a portfolio of interaction design, motion and prototypes, told through seven turnable books and one very hard-working crane claw.">
+  <title>Nitesh — Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <a class="logo" href="#stage" aria-label="Nitesh — back to the portfolio">
+        <span class="logo-mark" aria-hidden="true">N</span>
+        <span class="logo-text" aria-hidden="true">
+          <span class="logo-name">Nitesh</span>
+          <span class="logo-sub">Portfolio</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Portfolio sections">
+        <button class="nav-link" type="button" data-pick="2" aria-controls="panel-2">Work</button>
+        <button class="nav-link" type="button" data-pick="3" aria-controls="panel-3">About</button>
+        <button class="nav-link" type="button" data-pick="4" aria-controls="panel-4">Process</button>
+        <button class="nav-link" type="button" data-pick="7" aria-controls="panel-7">Contact</button>
+      </nav>
+
+      <a class="talk-link" href="mailto:hello@nitesh.example">Let's Talk <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="stage" id="stage">
+      <h1 class="sr-only">Nitesh — a portfolio of interaction design, motion and prototyping, told through seven turnable books</h1>
+      <p class="brand-line">NITESH · <span>PORTFOLIO</span> · 7 BOOKS · 2026</p>
+
+      <div class="rail" aria-hidden="true"></div>
+
+      <div class="claw is-open" id="claw" aria-hidden="true">
+        <div class="carriage"><i></i><i></i></div>
+        <div class="rod"></div>
+        <div class="grip"></div>
+        <div class="finger finger-left"></div>
+        <div class="finger finger-right"></div>
+      </div>
+
+      <div class="shelf" id="shelf">
+        <!-- 01 / PORTFOLIO -->
+        <article class="book" data-id="1" data-x=".47" data-y=".70" data-px=".50" data-py=".64"
+                 style="--color:#7a2f38;--dark:#542027;--ink:#6f2a32;--cover-ink:#f5ebda;--rx:-10deg;--ry:-22deg;--rz:5deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">PORT<br>FOLIO</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">NITESH</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-1" role="group" aria-label="Portfolio book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">01 / Hello</p>
+                <h2 class="inside-title">Hi, I'm <em>Nitesh.</em></h2>
+                <p class="inside-copy">A vibe coder with a curious mind, building playful digital experiences. Every book in this pile holds a piece of my work.</p>
+                <span class="page-mark" aria-hidden="true">01</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Welcome to the portfolio</p>
+                <p class="lead">Seven little books, one toy crane, and a pile of things I've made.</p>
+                <ul class="fact-list">
+                  <li><strong>50</strong><span>apps built</span></li>
+                  <li><strong>30</strong><span>brands trusted</span></li>
+                  <li><strong>7</strong><span>books to open</span></li>
+                </ul>
+                <p class="turn-hint">Turn the page <span aria-hidden="true">→</span></p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">The short version</p>
+                <h3 class="page-title">Design, motion &amp; a little <em>magic.</em></h3>
+                <p class="inside-copy">I design with AI as a creative partner — Figma, Claude, and a lot of heart. The goal is always the same: make the screen feel alive.</p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">What's inside</p>
+                <ul class="fact-list">
+                  <li><strong>Work</strong><span>three projects I'm proud of</span></li>
+                  <li><strong>Process</strong><span>how an idea becomes a thing</span></li>
+                  <li><strong>Toolkit</strong><span>the toys I build with</span></li>
+                </ul>
+                <p class="page-quote">"Make it useful. Then make it feel like play."</p>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the Portfolio book" aria-controls="panel-1" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 02 / SELECTED WORK -->
+        <article class="book" data-id="2" data-x=".15" data-y=".82" data-px=".18" data-py=".84"
+                 style="--color:#243f63;--dark:#182c47;--ink:#23405f;--cover-ink:#f5ebda;--rx:-12deg;--ry:26deg;--rz:11deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">THE<br>WORK</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">02</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-2" role="group" aria-label="Selected work book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">02 / Selected work</p>
+                <h2 class="inside-title">The <em>work.</em></h2>
+                <p class="inside-copy">A few projects that taught me something about interaction, motion and shipping the thing.</p>
+                <span class="page-mark" aria-hidden="true">02</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Contents</p>
+                <h3 class="page-title">Three projects, three <em>lessons.</em></h3>
+                <ul class="work-list">
+                  <li><strong>Zenwood Keyboard</strong><span>a portfolio you click like a keyboard</span></li>
+                  <li><strong>Retro Portfolio Machine</strong><span>a yellow computer that types my story</span></li>
+                  <li><strong>Portfolio Console</strong><span>a graphite case with terminal keys</span></li>
+                </ul>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Selected projects</p>
+                <ul class="work-list">
+                  <li><strong>Zenwood Keyboard</strong><span>A portfolio you click like a keyboard — every key opens a different story.</span></li>
+                  <li><strong>Retro Portfolio Machine</strong><span>A bright yellow computer that types my story one line at a time.</span></li>
+                </ul>
+              </section>
+              <section class="book-page">
+                <p class="kicker">And one more</p>
+                <ul class="work-list">
+                  <li><strong>Portfolio Console</strong><span>A graphite case with terminal keys, built for late-night browsing.</span></li>
+                </ul>
+                <p class="inside-copy">Want the full case study? Open the Say Hello book and tell me what you're building.</p>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the Selected Work book" aria-controls="panel-2" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 03 / ABOUT ME -->
+        <article class="book" data-id="3" data-x=".35" data-y=".87" data-px=".37" data-py=".92"
+                 style="--color:#2f4f41;--dark:#20372d;--ink:#2e4b3e;--cover-ink:#f5ebda;--rx:-9deg;--ry:-18deg;--rz:-8deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">ABOUT<br>ME</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">03</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-3" role="group" aria-label="About me book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">03 / About me</p>
+                <h2 class="inside-title">A little <em>about me.</em></h2>
+                <p class="inside-copy">Designer, tinkerer, and a firm believer that the best interfaces feel like toys.</p>
+                <span class="page-mark" aria-hidden="true">03</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">The short version</p>
+                <ul class="fact-list">
+                  <li><strong>50</strong><span>apps built</span></li>
+                  <li><strong>30</strong><span>brands trusted</span></li>
+                  <li><strong>1</strong><span>human with a crane</span></li>
+                </ul>
+                <p class="page-quote">"I like the part where it starts to feel alive."</p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">How I work</p>
+                <h3 class="page-title">AI as a <em>creative partner.</em></h3>
+                <p class="inside-copy">Figma for the shape of it, Claude for the thinking-out-loud, and a lot of heart for the parts that don't fit in a tool.</p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Currently</p>
+                <ul class="contact-list">
+                  <li><span>Based</span><strong>somewhere sunny</strong></li>
+                  <li><span>Building</span><strong>playful portfolios</strong></li>
+                  <li><span>Believing</span><strong>detail is the product</strong></li>
+                </ul>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the About Me book" aria-controls="panel-3" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 04 / PROCESS -->
+        <article class="book" data-id="4" data-x=".64" data-y=".86" data-px=".66" data-py=".90"
+                 style="--color:#353a41;--dark:#23272c;--ink:#333941;--cover-ink:#f5ebda;--rx:-11deg;--ry:22deg;--rz:9deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">PRO<br>CESS</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">04</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-4" role="group" aria-label="Process book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">04 / Process</p>
+                <h2 class="inside-title">How I <em>build.</em></h2>
+                <p class="inside-copy">Three steps, one very patient crane. Here's how an idea becomes a thing.</p>
+                <span class="page-mark" aria-hidden="true">04</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Step 01</p>
+                <h3 class="page-title">We <em>talk.</em></h3>
+                <p class="inside-copy">A conversation first, always. What are we making, who is it for, and what would make you grin when it works?</p>
+                <p class="turn-hint">Two more steps <span aria-hidden="true">→</span></p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Steps 02 &amp; 03</p>
+                <ol class="process-list">
+                  <li><span>02</span><strong>Sketch</strong><span>shape the idea together</span></li>
+                  <li><span>03</span><strong>Build &amp; launch</strong><span>ship it, then keep improving</span></li>
+                </ol>
+              </section>
+              <section class="book-page">
+                <p class="kicker">And then</p>
+                <p class="lead">Launch is the middle, not the end.</p>
+                <p class="inside-copy">We watch how it lands, tighten the loose bits, and keep the good parts. The crane goes back for another book.</p>
+                <p class="page-quote">"Small loops. Better work."</p>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the Process book" aria-controls="panel-4" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 05 / TOOLKIT -->
+        <article class="book" data-id="5" data-x=".85" data-y=".80" data-px=".84" data-py=".82"
+                 style="--color:#96744a;--dark:#6d5233;--ink:#6b5233;--cover-ink:#fbf1df;--rx:-13deg;--ry:-28deg;--rz:-11deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">TOOL<br>KIT</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">05</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-5" role="group" aria-label="Toolkit book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">05 / Toolkit</p>
+                <h2 class="inside-title">What's in the <em>box.</em></h2>
+                <p class="inside-copy">The tools change. The curiosity doesn't.</p>
+                <span class="page-mark" aria-hidden="true">05</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">The kit</p>
+                <ul class="chips" aria-label="Toolkit">
+                  <li>Figma</li><li>Claude</li><li>React</li><li>CSS</li><li>Motion</li><li>Prototyping</li>
+                </ul>
+                <p class="turn-hint">A closer look <span aria-hidden="true">→</span></p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">My daily three</p>
+                <ul class="fact-list">
+                  <li><strong>Figma</strong><span>design &amp; prototypes</span></li>
+                  <li><strong>Claude</strong><span>thinking partner</span></li>
+                  <li><strong>React</strong><span>the build</span></li>
+                </ul>
+              </section>
+              <section class="book-page">
+                <p class="kicker">The rest of the drawer</p>
+                <ul class="chips">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Motion</li><li>Prototyping</li><li>Coffee</li>
+                </ul>
+                <p class="page-quote">"A good tool disappears. A great one leaves a little magic behind."</p>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the Toolkit book" aria-controls="panel-5" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 06 / WHAT I DO -->
+        <article class="book" data-id="6" data-x=".27" data-y=".64" data-px=".28" data-py=".70"
+                 style="--color:#4b5a69;--dark:#35414d;--ink:#455563;--cover-ink:#f5ebda;--rx:-10deg;--ry:28deg;--rz:-9deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">WHAT<br>I DO</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">06</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-6" role="group" aria-label="What I do book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">06 / What I do</p>
+                <h2 class="inside-title">What I <em>do.</em></h2>
+                <p class="inside-copy">Interaction, motion and prototypes that make people want to poke the screen.</p>
+                <span class="page-mark" aria-hidden="true">06</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Services</p>
+                <ul class="chips" aria-label="Services">
+                  <li>Interaction design</li><li>Motion design</li><li>Prototyping</li><li>UI / UX design</li>
+                </ul>
+                <p class="turn-hint">Turn the page <span aria-hidden="true">→</span></p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Interaction &amp; motion</p>
+                <p class="inside-copy">Flows that feel obvious, feedback that feels alive, and movement with a reason. If it wiggles, it's doing a job.</p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Prototyping &amp; UI / UX</p>
+                <p class="inside-copy">Fast, clickable versions of the idea, so we can argue about the real thing instead of a slide. Then the polish.</p>
+                <p class="page-quote">"Show it. Then make it better."</p>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the What I Do book" aria-controls="panel-6" aria-expanded="false"></button>
+          </div>
+        </article>
+        <!-- 07 / SAY HELLO -->
+        <article class="book" data-id="7" data-x=".73" data-y=".66" data-px=".72" data-py=".72"
+                 style="--color:#634634;--dark:#463023;--ink:#5a3f2e;--cover-ink:#fbf1df;--rx:-11deg;--ry:-24deg;--rz:12deg">
+          <div class="book-body">
+            <div class="board board-back" aria-hidden="true"></div>
+            <div class="board board-spine" aria-hidden="true"></div>
+            <div class="board board-edge" aria-hidden="true"></div>
+            <div class="board board-top" aria-hidden="true"></div>
+            <div class="board board-bottom" aria-hidden="true"></div>
+
+            <div class="cover" aria-hidden="true">
+              <div class="cover-face">
+                <span class="cover-spine"></span>
+                <span class="cover-title">SAY<br>HELLO</span>
+                <span class="cover-rule"></span>
+                <span class="cover-tag">07</span>
+              </div>
+              <div class="cover-inner"></div>
+            </div>
+
+            <div class="spread" id="panel-7" role="group" aria-label="Say hello book">
+              <div class="page page-left">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">01</span>
+              </div>
+              <div class="page page-right">
+                <div class="page-inner"></div>
+                <span class="folio" aria-hidden="true">02</span>
+              </div>
+              <div class="turn-sheet" aria-hidden="true" inert>
+                <div class="turn-face turn-front"><div class="turn-inner"></div><span class="turn-folio turn-folio-right"></span></div>
+                <div class="turn-face turn-back"><div class="turn-inner"></div><span class="turn-folio turn-folio-left"></span></div>
+              </div>
+              <div class="page-nav">
+                <button class="page-btn page-prev" type="button" aria-label="Previous page" aria-disabled="true">←</button>
+                <span class="page-count" aria-live="polite">1 / 2</span>
+                <button class="page-btn page-next" type="button" aria-label="Next page">→</button>
+              </div>
+            </div>
+
+            <template class="book-pages">
+              <section class="book-page">
+                <p class="kicker">07 / Say hello</p>
+                <h2 class="inside-title">Got an <em>idea?</em></h2>
+                <p class="inside-copy">Have a project in mind, a half-formed idea, or just want to say hi?</p>
+                <span class="page-mark" aria-hidden="true">07</span>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Say hello</p>
+                <ul class="contact-list">
+                  <li><span>Email</span><strong>hello@nitesh.example</strong></li>
+                  <li><span>Socials</span><strong>@nitesh</strong></li>
+                  <li><span>Reply time</span><strong>within two days</strong></li>
+                </ul>
+                <p class="turn-hint">One more page <span aria-hidden="true">→</span></p>
+              </section>
+              <section class="book-page">
+                <p class="kicker">What to expect</p>
+                <ul class="work-list">
+                  <li><strong>A real reply</strong><span>from me, not a form letter</span></li>
+                  <li><strong>A short call</strong><span>to find the shape of it</span></li>
+                  <li><strong>A plan</strong><span>not a pitch deck</span></li>
+                </ul>
+              </section>
+              <section class="book-page">
+                <p class="kicker">Let's talk</p>
+                <h3 class="page-title">Tell me what you're <em>making.</em></h3>
+                <p class="inside-copy">No brief required. A messy idea is a great start.</p>
+                <a class="mail-pill" href="mailto:hello@nitesh.example">hello@nitesh.example <span aria-hidden="true">↗</span></a>
+              </section>
+            </template>
+
+            <button class="book-hit" type="button" aria-label="Open the Say Hello book" aria-controls="panel-7" aria-expanded="false"></button>
+          </div>
+        </article>
+      </div>
+
+      <p class="pick-pill">PICK A BOOK <span aria-hidden="true">↓</span></p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
